@@ -1,0 +1,209 @@
+html {
+    background-color: #f3f3f3;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#character-list {
+    height: 95vh;
+    width: 22rem;
+    overflow-y:scroll;
+}
+
+#character-list h2:hover {
+    cursor: pointer;
+}
+
+#character-ui {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.character-sublist.hidden {
+    display: none;
+}
+
+.small-character {
+    height: auto;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #0000001c;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.small-character:hover {
+    transition: 0.2s;
+    background-color: #0000003c;
+}
+
+.small-character.selected {
+    background-color: #0000004c;
+}
+
+.small-character .character-info {
+    display: flex;
+    flex-direction: column;
+}
+.small-character .character-name {
+    font-weight: bolder;
+}
+
+.small-character img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.big-character {
+    float: left;
+    height: auto;
+    width: 27rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    margin: 0.1rem 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.big-character:hover {
+    transition: 0.2s;
+    background-color: #0000003c;
+}
+
+.big-character.selected {
+    background-color: #0000004c;
+}
+
+.big-character .character-info {
+    display: flex;
+    flex-direction: column;
+}
+.big-character .character-name {
+    font-weight: bolder;
+}
+
+.big-character img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#ui input {
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    border: #0000001c solid 3px;
+    margin: 0.5rem 0;
+}
+
+#ui button {
+    width: auto;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: #0000003d solid 3px;
+    margin: 0.5rem 0;
+    transition: 0.2s;
+}
+
+#ui button:hover {
+    transition: 0.2s;
+    background-color: #0000003c;
+}
+
+#content{
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    border-left: #0000001c solid 3px;
+    border-right: #0000001c solid 3px;
+}
+
+#script-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#panel {
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.character-group {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#panel h2 {
+    margin-left: 0.5rem;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+
+#traveler-2 {
+    border-top: #0000001c solid 3px;
+}
+
+.night-column {
+    width: 3rem;
+    height: 100%;
+    background-color: #0000001c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+#firstnight-container, #othernight-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.night-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.2rem;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+#header #panel-title {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#header #panel-author {
+    font-size: 1rem;
+    font-weight: normal;
+}

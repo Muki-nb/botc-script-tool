@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Script Tool</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <body>
+        <div id = "character-list">
+            <h2 onclick = "displayCharacterList('traveler')">旅行者</h2>
+            <div id = "traveler" class = "character-sublist hidden">
+
+            </div>
+            <h2 onclick = "displayCharacterList('townsfolk')">镇民</h2>
+            <div id = "townsfolk" class = "character-sublist">
+
+            </div>
+            <h2 onclick = "displayCharacterList('outsider')">外来者</h2>
+            <div id = "outsider" class = "character-sublist">
+
+            </div>
+            <h2 onclick = "displayCharacterList('minion')">爪牙</h2>
+            <div id = "minion" class = "character-sublist">
+
+            </div>
+            <h2 onclick = "displayCharacterList('demon')">恶魔</h2>
+            <div id = "demon" class = "character-sublist">
+
+            </div>
+        </div>
+        <div id = "content">
+            <div id = "header">
+                <div id = "panel-title"></div>
+                <div id = "panel-author"></div>
+            </div>
+            <div id = "script-content">
+                <div id = "firstnight" class="night-column">
+                    首个<br>夜晚
+                    <div id = "firstnight-container">
+
+                    </div>
+                </div>
+                <div id = "panel">
+                    <h2>镇民</h2>
+                    <div id = "townsfolk-2" class = "character-group">
+
+                    </div>
+                    <h2>外来者</h2>
+                    <div id = "outsider-2" class = "character-group">
+
+                    </div>
+                    <h2>爪牙</h2>
+                    <div id = "minion-2" class = "character-group">
+
+                    </div>
+                    <h2>恶魔</h2>
+                    <div id = "demon-2" class = "character-group">
+
+                    </div>
+                    <div id = "traveler-2" class = "character-group">
+
+                    </div>
+                </div>
+                <div id = "othernight" class="night-column">
+                    其他<br>夜晚
+                    <div id = "othernight-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "ui">
+            剧本名
+            <input id = "script-title" onchange="updateText()">
+            剧本作者
+            <input id = "script-author" onchange="updateText()">
+            json
+            <input id = "json">
+            <button id = "" onclick="toJSON()">下载JSON</button>
+            <button id = "" onclick="toPNG()">打印</button>
+        </div>
+    </body>
+    <script src="./js/dict.js"></script>
+    <script src="./js/jinx.js"></script>
+    <script src="./js/creator.js"></script>
+    <script src="./js/load.js"></script>
+    <script src="./js/print.js"></script>
+    <script src="./js/display.js"></script>
+</html>
