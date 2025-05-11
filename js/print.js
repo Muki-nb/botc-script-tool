@@ -13,7 +13,7 @@ function toJSON(){
 }
 
 async function toPNG(){
-    let panel = document.getElementById('panel');
+    let panel = document.getElementById('content');
     domtoimage.toPng(panel, options)
     .then(function (dataUrl) {
         const link = document.createElement('a');
