@@ -10,8 +10,8 @@ body {
 
 #character-list {
     height: 95vh;
+    overflow-y: auto;
     width: 22rem;
-    overflow-y:scroll;
 }
 
 #character-list h2:hover {
@@ -24,6 +24,10 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+.character-sublist {
+    height: 80vh;
+    overflow-y: auto;
 }
 
 .character-sublist.hidden {
