@@ -292,6 +292,7 @@ input {
 .jinx-item img {
     height: 2.5rem;
     width: 2.5rem;
+    filter: grayscale(80%);
 }
 
 .flex-row {

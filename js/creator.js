@@ -52,7 +52,7 @@ function createJinxElement(a, b, ajinx){
     jinxElement.innerHTML = `
         <img src="${b.image2}">
         <div class = "jinx-info">
-            （相克规则：${ajinx}）
+            （<b>相克规则</b>：${ajinx}）
         </div>
     `;
 
@@ -70,8 +70,8 @@ function updateJSON(){
     for(let i in jinx){
         let c;
         for(let j of list){
-            if(j.name == i){
-                c = i;
+            if(j.id == i){
+                c = j;
                 break;
             }
         }
@@ -97,7 +97,13 @@ function updateJSON(){
     return result;
 }
 
+let teams = ["townsfolk", "outsider", "minion", "demon", "traveler"];
+
 function useJSON(){
+    list = [];
+    jinx = {};
+    updateBigImg();
+
     let json = JSON.parse(jsonbox.value);
     for(let i of document.getElementsByClassName("small-character")){
         i.classList.remove("selected");
@@ -107,7 +113,7 @@ function useJSON(){
             if(i.id == "_meta"){
                 author.value = i.author;
                 title.value = i.name;
-            }else{
+            }else if("team" in i && teams.includes(i.team)){
                 let character = {};
                 if(i.id in _characters){
                     character = {
