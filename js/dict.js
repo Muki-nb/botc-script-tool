@@ -2266,13 +2266,13 @@ const _characters = {
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
         "edition": "custom",
         "name": "杂技演员",
-        "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
-        "team": "outsider",
-        "sch_team": "外来者",
+        "ability": "每个夜晚*，你要选择一名玩家：如果他在当晚醉酒或中毒，你死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
         "firstNight": 0,
         "otherNight": 60,
         "firstNightReminder": "",
-        "otherNightReminder": "在夜晚的任意时机如果与杂技演员邻近的存活善良玩家醉酒中毒，杂技演员死亡。",
+        "otherNightReminder": "在夜晚的任意时机如果与杂技演员选择的玩家醉酒中毒，杂技演员死亡。",
         "reminders": [
             "死亡"
         ],

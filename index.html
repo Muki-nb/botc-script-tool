@@ -28,6 +28,10 @@
             <div id = "demon" class = "character-sublist">
 
             </div>
+            <h2 onclick = "/*displayCharacterList('custom')*/ alert('待更新');">自制</h2>
+            <div id = "custom" class = "character-sublist">
+
+            </div>
         </div>
         <div id = "content">
             <div id = "header">
@@ -76,14 +80,57 @@
             <input id = "script-author" onchange="updateText()">
             json
             <input id = "json">
+            <button id = "" onclick="useJSON()">导入JSON</button>
             <button id = "" onclick="toJSON()">下载JSON</button>
             <button id = "" onclick="toPNG()">打印</button>
+            <button id = "uploadCharacter" onclick="uploadCharacter()">上传自制角色</button>
+        </div>
+        <div id = "custom">
+            <div id = "custom-ui">
+                <div id = "custom-icon">
+                    <h2>上传自制角色图标</h2>
+                    <img onclick = "uploadCustomIcon()">
+                    <button id = "uploadCharacter-finish">上传角色</button>
+                    <input id = "custom-icon-file" type="file" accept="image/*" style="display:none;">
+                </div>
+                <div id = "custom-info">
+                    <h3>角色名</h3>
+                    <input id = "custom-name" style="width: 8rem;">
+                    <h3>角色类型</h3>
+                    <select id = "custom-team">
+                        <option value = "townsfolk">镇民</option>
+                        <option value = "outsider">外来者</option>
+                        <option value = "minion">爪牙</option>
+                        <option value = "demon">恶魔</option>
+                        <option value = "traveler">旅行者</option>
+                    </select>
+                    <h3>角色能力</h3>
+                    <input id = "custom-ability" style="width: 27rem;height: 4rem;">
+                    <div class = "ui-line">
+                        <h3>首夜行动顺位</h3>
+                        <input id = "custom-firstNight" style="width: 3rem;">
+                    </div>
+                    <div class = "ui-line">
+                        <h3>其他夜晚顺位</h3>
+                        <input id = "custom-otherNight" style="width: 3rem;">
+                    </div>
+                    <div class = "ui-line">
+                        <h3>[JSON] - 是否有设置调整能力</h3>
+                        <input id = "custom-ability"type="checkbox" style="margin-left: 1.5rem;width: 1.5rem; height: 1.5rem;">
+                    </div>
+                    <h3>[JSON] - 提示标记（每个换行分隔）</h3>
+                    <input id = "custom-ability" style="width: 27rem;height: 4rem;">
+                    <h3>[JSON] - 全局提示标记（每个换行分隔）</h3>
+                    <input id = "custom-ability" style="width: 27rem;height: 4rem;">
+                </div>
+            </div>
         </div>
     </body>
-    <script src="./js/dict.js"></script>
-    <script src="./js/jinx.js"></script>
-    <script src="./js/creator.js"></script>
-    <script src="./js/load.js"></script>
-    <script src="./js/print.js"></script>
-    <script src="./js/display.js"></script>
+    <script src="./js/dict.js?v=1.0.2"></script>
+    <script src="./js/jinx.js?v=1.0.2"></script>
+    <script src="./js/creator.js?v=1.0.2"></script>
+    <script src="./js/load.js?v=1.0.2"></script>
+    <script src="./js/print.js?v=1.0.2"></script>
+    <script src="./js/display.js?v=1.0.2"></script>
+    <script src="./js/custom.js?v=1.0.2"></script>
 </html>

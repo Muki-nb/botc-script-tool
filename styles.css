@@ -105,7 +105,7 @@ body {
     align-items: center;
 }
 
-#ui input {
+input {
     width: 90%;
     height: 1.5rem;
     border-radius: 0.5rem;
@@ -113,7 +113,7 @@ body {
     margin: 0.5rem 0;
 }
 
-#ui button {
+#ui button, #custom button {
     width: auto;
     height: 2rem;
     border-radius: 0.5rem;
@@ -122,7 +122,7 @@ body {
     transition: 0.2s;
 }
 
-#ui button:hover {
+#ui button:hover, #custom button:hover {
     transition: 0.2s;
     background-color: #0000003c;
 }
@@ -206,4 +206,100 @@ body {
 #header #panel-author {
     font-size: 1rem;
     font-weight: normal;
+}
+
+#custom {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000005c;
+    top : 0;
+    left : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+#custom-ui {
+    height: 75vh;
+    width: 60vw;
+    min-height: 30rem;
+    min-width: 60rem;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid #1c1c1c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#custom-ui img{
+    height: 30vh;
+    width: 30vh;
+    min-width: 15rem;
+    min-height: 15rem;
+    border-radius: 15px;
+    border: 2.5px solid #1c1c1c75;
+    object-fit: fill;
+}
+
+#custom-icon, #custom-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#custom-icon {
+    text-align: center;
+}
+
+#custom-info input {
+    border: 2.5px solid #1c1c1c75;
+}
+
+#custom-info h3 {
+    margin-left: 0.5rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#custom-info input {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.ui-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.jinx-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+    background-color: #0000003c;
+    border-radius: 15px;
+}
+
+.jinx-info {
+    font-style: italic;
+    font-size: small;
+    padding-right: 0.5rem;
+}
+
+.jinx-item img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
