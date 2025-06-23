@@ -1452,6 +1452,22 @@ const _characters = {
         "setup": false,
         "image2": "./assets/alsaahir.png"
     },
+    "princess": {
+        "id": "princess",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/f2/Princess.png/300px-Princess.png",
+        "edition": "custom",
+        "name": "公主",
+        "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": ["不会死亡"],
+        "setup": false,
+        "image2": "./assets/princess.png"
+    },
     "yinyangshi": {
         "id": "yinyangshi",
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yinyangshi.png",
