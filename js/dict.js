@@ -3047,6 +3047,20 @@ const _characters = {
         "setup": true,
         "image2": "./assets/xaan.png"
     },
+    "wraith": {
+        "id": "wraith",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/7c/Wraith.png/300px-Wraith.png",
+        "edition": "custom",
+        "name": "亡魂",
+        "ability": "你可以在夜晚睁眼。当其他邪恶玩家被唤醒时，你也会被唤醒。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [],
+        "setup": true,
+        "image2": "./assets/wraith.png"
+    },
     "humeiniang": {
         "id": "humeiniang",
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/humeiniang.png",
